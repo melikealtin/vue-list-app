@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: none;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Mulish", sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background-color: #161e29;
+}
+
+.container {
+  background-color: #1b2431;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  box-shadow: 0 10px 20px -20px #081323;
+
+  .content {
+    padding: 20px;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    hr {
+      background: linear-gradient(to right, #59bacc, #ffbc49);
+      height: 1px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #c9cedf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 350px;
+      height: 20px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      padding: 4px;
+      color: black;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .listsection {
+      flex-direction: column;
+
+      .todolist {
+        .itemname {
+          color: #c9cedf;
+          font-size: 16px;
+
+          .itemrow {
+            border-radius: 4px;
+            background: lighten(#1b2431, 3%);
+
+            &:hover {
+              background: lighten(#1b2431, 10%);
+            }
+
+            li {
+              padding: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 8px;
+              font-size: 16px;
+            }
+            button {
+              padding-right: 5px;
+              padding-left: 5px;
+              border-radius: 4px;
+              color: #c9cedf;
+              background-color: #d44646;
+              cursor: pointer;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .result {
+      display: flex;
+      justify-content: end;
+      color: #587dfb;
+    }
+  }
+}
